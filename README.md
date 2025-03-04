@@ -1,59 +1,60 @@
-# FlexiButton
+# Flexi Button
+A highly customizable button component for Angular v19.x
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+## Features
+- Supports text, icon, or both
+- Integration with Google Material Symbols for icons
+- Customizable size, color, and rounded corners
+- Built-in loading state
 
-## Development server
-
-To start a local development server, run:
-
+## Installation
+Install the package using npm
 ```bash
-ng serve
+npm i flexi-button
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Documentation
+For detailed documentation and more usage examples, visit [Flexi UI Documentation](https://flexi-ui.ecnorow.com/).
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+## Usage
+#### 1. Button with Text
+Create a button with text
+```html
+<flexi-button btnColor="primary" btnText="Print" btnSize="medium">
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+#### 2. Button with Icon
+You can use any icon from <a href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:download:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%235f6368&icon.platform=web" target="_blank">Google Material Symbols.</a>
+```html
+<flexi-button btnIcon="print" btnColor="primary" title="Print" flexiToolTip btnSize="medium">
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+#### 3. Button with Icon and Text
+Combine text and an icon in the same button
+```html
+<flexi-button btnIcon="print" btnColor="primary" btnText="Print" btnSize="medium">
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+#### 4. Rounded Button
+Make the button corners rounded
+```html
+<flexi-button btnIcon="print" btnColor="primary" btnText="Print" btnSize="medium" [btnRounded]="true">
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+#### 4. Button with Loading State
+Display a loading spinner instead of the button's content
+```html
+<flexi-button btnColor="primary" btnSize="medium" [loading]="true">
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Inputs Reference
+| Input Name      | Type    | Description                                                                                 |
+|-----------------|---------|---------------------------------------------------------------------------------------------|
+| `btnColor`      | string  | Button color. Available values: `light`, `primary`, `success`, `danger`, `warning`, `info`, `dark`, `indigo`, `purple`, `pink`, `teal`, `yellow`, `secondary`, `black`, `white`. |
+| `title`         | string  | Text displayed on the button as a tooltip instead of `btnText`.                             |
+| `btnText`       | string  | Text displayed on the button (use `title` for tooltip functionality instead).               |
+| `btnIcon`       | string  | Icon name from Google Material Symbols.                                                    |
+| `btnSize`       | string  | Button size (e.g., `small`, `medium`, `large`).                                             |
+| `btnRounded`    | boolean | Whether the button should have rounded corners.                                             |
+| `flexiToolTip`  | string  | Tooltip text displayed when hovering over the button.                                       |
+| `loading`       | boolean | Displays a loading spinner if set to `true`.                                                |
