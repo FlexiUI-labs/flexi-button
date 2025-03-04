@@ -2,7 +2,7 @@
 
 :root, [data-color-theme=light] {
   --body-font-size-lg: 0.875rem;
-  --body-font-size-md: 0.75rem;
+  --body-font-size-md: 0.725rem;
   --body-font-size-sm: 0.625rem;
   --body-font-size-xs: 0.525rem;
   --body-line-height-computed: calc(1375rem / 1000);
@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 
-.flexi-button {  
+.flexi-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -164,6 +164,7 @@
 
 .flexi-button-size-medium{
   font-size: var(--body-font-size-md);
+  padding: 6px;
 }
 
 .flexi-button-size-medium .material-symbols-outlined{
@@ -172,10 +173,11 @@
 
 .flexi-button-size-large{
   font-size: var(--body-font-size-lg);
+  padding: 8px;
 }
 
 .flexi-button-size-large .material-symbols-outlined{
-  font-size: 2rem;
+  font-size: 22px;
 }
 
 .flexi-button-rounded{
