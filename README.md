@@ -13,9 +13,6 @@ Install the package using npm
 npm i flexi-button
 ```
 
-## Documentation
-For detailed documentation and more usage examples, visit [Flexi UI Documentation](https://flexi-ui.ecnorow.com/).
-
 ## Usage
 #### 1. Button with Text
 Create a button with text
