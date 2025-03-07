@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
 :root, [data-color-theme=light] {
-  --body-font-size-lg: 0.875rem;
-  --body-font-size-md: 0.725rem;
-  --body-font-size-sm: 0.625rem;
-  --body-font-size-xs: 0.525rem;
+  --body-font-size-lg: 19px;
+  --body-font-size-md: 16px;
+  --body-font-size-sm: 15px;
+  --body-font-size-xs: 13px;
   --body-line-height-computed: calc(1375rem / 1000);
   --body-line-height-lg: 1.375;
   --body-line-height-sm: 1.8334;
@@ -101,7 +101,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 1px;
 }
 
 .flexi-button-float{
@@ -498,12 +498,12 @@ fieldset:disabled .flexi-button {
 }
 
 .flexi-button-spinner {
-  width: 20px;
-  height: 20px;
-  border: 3px solid rgba(255, 255, 255, 0.3); /* Dış çerçeve */
-  border-top-color: #ffffff; /* Dönen kısmın rengi */
+  width: 15px;
+  height: 15px;
+  border: 3px solid rgba(0, 0, 0, 1);
+  border-top-color: transparent;
   border-radius: 50%;
-  animation: flexi-button-spin 1s linear infinite; /* Döndürme animasyonu */
+  animation: flexi-button-spin 1s linear infinite;
 }
 
 @keyframes flexi-button-spin {
