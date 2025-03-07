@@ -13,7 +13,7 @@ import { ChangeDetectionStrategy, Component, input, Input, ViewEncapsulation } f
 export class FlexiButtonComponent {
   readonly btnIcon = input<string | undefined>(undefined);
   readonly btnColor = input<FlexiButtonColorType>('light');
-  readonly btnSize = input<FlexiButtonSizeType>('small');
+  readonly btnSize = input<FlexiButtonSizeType>('medium');
   readonly btnText = input<string | undefined>(undefined);
   readonly btnType = input<FlexiButtonType>("button");
   readonly btnDisabled = input<boolean>(false);
