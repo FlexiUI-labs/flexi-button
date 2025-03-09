@@ -15,9 +15,22 @@ npm i flexi-button
 
 ## Usage
 #### 1. Button with Text
-Create a button with text
+Examples
 ```html
-<flexi-button btnColor="primary" btnText="Print" btnSize="medium">
+<flexi-button btnColor="primary" title="Print" btnSize="x-small" btnIcon="print">
+<flexi-button btnColor="primary" title="Print" btnSize="small" btnIcon="print">
+<flexi-button btnColor="primary" title="Print" btnSize="medium" btnIcon="print">
+<flexi-button btnColor="primary" title="Print" btnSize="large" btnIcon="print">
+
+<flexi-button btnColor="primary" btnText="Print" btnSize="x-small" btnIcon="print">
+<flexi-button btnColor="primary" btnText="Print" btnSize="small" btnIcon="print">
+<flexi-button btnColor="primary" btnText="Print" btnSize="medium" btnIcon="print">
+<flexi-button btnColor="primary" btnText="Print" btnSize="large" btnIcon="print">
+
+<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="x-small" btnIcon="print">
+<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="small" btnIcon="print">
+<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="medium" btnIcon="print">
+<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="large" btnIcon="print">
 ```
 
 #### 2. Button with Icon
@@ -48,10 +61,10 @@ Display a loading spinner instead of the button's content
 | Input Name      | Type    | Description                                                                                 |
 |-----------------|---------|---------------------------------------------------------------------------------------------|
 | `btnColor`      | string  | Button color. Available values: `light`, `primary`, `success`, `danger`, `warning`, `info`, `dark`, `indigo`, `purple`, `pink`, `teal`, `yellow`, `secondary`, `black`, `white`. |
-| `title`         | string  | Text displayed on the button as a tooltip instead of `btnText`.                             |
+| `btnSize`       | string  | Button size (e.g., `small`, `medium`, `large`).                                             |
 | `btnText`       | string  | Text displayed on the button (use `title` for tooltip functionality instead).               |
 | `btnIcon`       | string  | Icon name from Google Material Symbols.                                                    |
-| `btnSize`       | string  | Button size (e.g., `small`, `medium`, `large`).                                             |
+| `title`         | string  | Text displayed on the button as a tooltip instead of `btnText`.                             |
 | `btnRounded`    | boolean | Whether the button should have rounded corners.                                             |
 | `flexiToolTip`  | string  | Tooltip text displayed when hovering over the button.                                       |
 | `loading`       | boolean | Displays a loading spinner if set to `true`.                                                |

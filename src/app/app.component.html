@@ -1,13 +1,48 @@
-<flexi-button btnSize="x-small" btnIcon="add" btnText="Add" />
-<flexi-button btnSize="small" btnIcon="add" btnText="Add" />
-<flexi-button btnSize="medium" btnIcon="add" btnText="Add" />
-<flexi-button btnSize="large" btnIcon="add" btnText="Add" />
+<div style="display: flex; gap: 5px; align-items: end;">
+    <flexi-button btnSize="x-small" btnIcon="add" title="Add" [btnColor]="btnColor()" />
+    <flexi-button btnSize="x-small" btnIcon="add" btnText="Add" [btnColor]="btnColor()" />
+    <flexi-button btnSize="x-small" btnIcon="add" [loading]="true" [btnColor]="btnColor()" />
+    <flexi-button btnSize="x-small" btnIcon="add" [loading]="true" [btnColor]="btnColor()" btnWidth="100px" />
+    <flexi-button btnSize="x-small" btnIcon="add" loadingText="Loading..." [loading]="true" [btnColor]="btnColor()" />
+    <flexi-button btnSize="x-small" btnIcon="add" loadingText="Loading..." [loading]="true" [btnColor]="btnColor()" btnWidth="200px" [btnDisabled]="true" />
+</div>
+<div style="display: flex; gap: 5px; align-items: end; margin-top: 10px;">
+    <flexi-button btnSize="small" btnIcon="add" title="Add" [btnColor]="btnColor()" />
+    <flexi-button btnSize="small" btnIcon="add" btnText="Add" [btnColor]="btnColor()" />
+    <flexi-button btnSize="small" btnIcon="add" btnText="Add" [loading]="true" [btnColor]="btnColor()" />
+    <flexi-button btnSize="small" btnIcon="add" btnText="Add" loadingText="Loading..." [loading]="true" [btnColor]="btnColor()" />
+</div>
+
+<div style="display: flex; gap: 5px; align-items: end; margin-top: 10px;">
+    <flexi-button btnSize="medium" btnIcon="add" title="Add" [btnColor]="btnColor()" flexiGridTooltip />
+    <flexi-button btnSize="medium" btnIcon="add" btnText="Add" [btnColor]="btnColor()" />
+    <flexi-button btnSize="medium" btnIcon="add" btnText="Add" [loading]="true" [btnColor]="btnColor()" />
+    <flexi-button btnSize="medium" btnIcon="add" btnText="Add" loadingText="Loading..." [loading]="true" [btnColor]="btnColor()" />
+</div>
+
+<div style="display: flex; gap: 5px; align-items: end; margin-top: 10px;">
+    <flexi-button btnSize="large" btnIcon="add" title="Add" [btnColor]="btnColor()" />
+    <flexi-button btnSize="large" btnIcon="add" btnText="Add" [btnColor]="btnColor()" />
+    <flexi-button btnSize="large" btnIcon="add" btnText="Add" [loading]="true" [btnColor]="btnColor()" />
+    <flexi-button btnSize="large" btnIcon="add" btnText="Add" loadingText="Loading..." [loading]="true" [btnColor]="btnColor()" />
+</div>
+
 
 <hr>
-<flexi-button btnSize="x-small" btnIcon="add" btnText="Add" [firstText]="true" />
-<flexi-button btnSize="small" btnIcon="add" btnText="Add" [firstText]="true" />
-<flexi-button btnSize="medium" btnIcon="add" btnText="Add" [firstText]="true" />
-<flexi-button btnSize="large" btnIcon="add" btnText="Add" [firstText]="true" />
+<!-- <flexi-grid [data]="data()" [showCaption]="true">
+    <ng-template flexiGridCaptionCommandTemplate>
+        <flexi-button btnSize="medium" btnIcon="add" title="Add" [btnColor]="btnColor()" flexiTooltip />
+    </ng-template>
+    <flexi-grid-column field="name" title="Name" />
+    <flexi-grid-column field="username" title="User Name" />
+    <flexi-grid-column field="email" title="Email" />
+    <flexi-grid-column field="address.street" title="Street" />
+    <flexi-grid-column field="address.suite" title="Suite" />
+    <flexi-grid-column field="address.city" title="City" />
+    <flexi-grid-column field="address.zipcode" title="Zip Code" />
 
-<hr>
-<flexi-button btnSize="large" btnIcon="add" [loading]="true" />
+    <ng-template flexiGridColumnCommandTemplate>
+        <flexi-button btnSize="small" btnIcon="edit" title="Add" flexiTooltip [btnColor]="btnColor()" />
+        <flexi-button btnSize="small" btnIcon="remove" title="Add" flexiTooltip [btnColor]="btnColor()" />
+    </ng-template>
+</flexi-grid> -->

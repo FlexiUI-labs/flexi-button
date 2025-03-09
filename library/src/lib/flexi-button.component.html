@@ -3,11 +3,11 @@
   [class.flexi-button-rounded]="btnRounded()"
   [class.flexi-button-float]="btnFloat()"
   [type]="btnType()"
-  [disabled]="btnDisabled()"
+  [disabled]="btnDisabled() || loading()"
   [style.width]="btnWidth()"
 >
     @if(loading()){
-        <span class="flexi-button-spinner"></span>
+        <span class="flexi-button-spinner flexi-button-spinner-{{btnSize()}} flexi-button-spinner-{{btnColor()}}"></span>
         @if(loadingText()){
             <span class="flexi-button-text">{{loadingText()}}</span>
         }

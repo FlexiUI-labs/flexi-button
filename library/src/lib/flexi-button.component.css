@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
 :root, [data-color-theme=light] {
-  --body-font-size-lg: 19px;
-  --body-font-size-md: 16px;
-  --body-font-size-sm: 15px;
-  --body-font-size-xs: 13px;
+  --body-font-size-lg: 15px;
+  --body-font-size-md: 14px;
+  --body-font-size-sm: 13px;
+  --body-font-size-xs: 12px;
   --body-line-height-computed: calc(1375rem / 1000);
   --body-line-height-lg: 1.375;
   --body-line-height-sm: 1.8334;
@@ -148,7 +148,7 @@
   gap: 2px !important;
 }
 
-.flexi-button-size-small .material-symbols-outlined{
+.flexi-button-size-x-small .material-symbols-outlined{
   font-size: 19px !important;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .flexi-button-size-small .material-symbols-outlined{
-  font-size: 19px !important;
+  font-size: 20px !important;
 }
 
 .flexi-button-size-medium{
@@ -168,7 +168,7 @@
 }
 
 .flexi-button-size-medium .material-symbols-outlined{
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .flexi-button-size-large{
@@ -177,7 +177,7 @@
 }
 
 .flexi-button-size-large .material-symbols-outlined{
-  font-size: 22px;
+  font-size: 23px;
 }
 
 .flexi-button-rounded{
@@ -497,13 +497,41 @@ fieldset:disabled .flexi-button {
   --btn-disabled-border-color: #fff;
 }
 
+.flexi-button-text{
+  margin-left: 3px;
+}
+
 .flexi-button-spinner {
-  width: 15px;
-  height: 15px;
-  border: 3px solid rgba(0, 0, 0, 1);
+  border: 3px solid white;
+  margin: 3.4px;
   border-top-color: transparent;
   border-radius: 50%;
   animation: flexi-button-spin 1s linear infinite;
+}
+
+.flexi-button-spinner-x-small{
+  width: 7px;
+  height: 7px;
+}
+
+.flexi-button-spinner-small{
+  width: 9px;
+  height: 9px;
+}
+
+.flexi-button-spinner-medium{
+  width: 10px;
+  height: 10px;
+}
+
+.flexi-button-spinner-large{
+  width: 12px;
+  height: 12px;
+}
+
+.flexi-button-spinner-light{
+  border-color: black;
+  border-top-color: transparent;
 }
 
 @keyframes flexi-button-spin {
