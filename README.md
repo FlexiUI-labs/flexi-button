@@ -1,5 +1,9 @@
 # Flexi Button
-A highly customizable button component for Angular v19.x
+A highly customizable button component for Angular
+
+## Live Demo
+
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://bolt.new/~/stackblitz-starters-k8agwdjl)
 
 ## Features
 - Supports text, icon, or both
@@ -17,20 +21,20 @@ npm i flexi-button
 #### 1. Button with Text
 Examples
 ```html
-<flexi-button btnColor="primary" title="Print" btnSize="x-small" btnIcon="print">
-<flexi-button btnColor="primary" title="Print" btnSize="small" btnIcon="print">
-<flexi-button btnColor="primary" title="Print" btnSize="medium" btnIcon="print">
-<flexi-button btnColor="primary" title="Print" btnSize="large" btnIcon="print">
+<flexi-button btnColor="primary" title="Print" btnSize="x-small" btnIcon="print" />
+<flexi-button btnColor="primary" title="Print" btnSize="small" btnIcon="print" />
+<flexi-button btnColor="primary" title="Print" btnSize="medium" btnIcon="print" />
+<flexi-button btnColor="primary" title="Print" btnSize="large" btnIcon="print" />
 
-<flexi-button btnColor="primary" btnText="Print" btnSize="x-small" btnIcon="print">
-<flexi-button btnColor="primary" btnText="Print" btnSize="small" btnIcon="print">
-<flexi-button btnColor="primary" btnText="Print" btnSize="medium" btnIcon="print">
-<flexi-button btnColor="primary" btnText="Print" btnSize="large" btnIcon="print">
+<flexi-button btnColor="primary" btnText="Print" btnSize="x-small" btnIcon="print" />
+<flexi-button btnColor="primary" btnText="Print" btnSize="small" btnIcon="print" />
+<flexi-button btnColor="primary" btnText="Print" btnSize="medium" btnIcon="print" />
+<flexi-button btnColor="primary" btnText="Print" btnSize="large" btnIcon="print" />
 
-<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="x-small" btnIcon="print">
-<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="small" btnIcon="print">
-<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="medium" btnIcon="print">
-<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="large" btnIcon="print">
+<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="x-small" btnIcon="print" />
+<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="small" btnIcon="print" />
+<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="medium" btnIcon="print" />
+<flexi-button btnColor="primary" loadingText="loading..." [loading]="true" btnSize="large" btnIcon="print" />
 ```
 
 #### 2. Button with Icon

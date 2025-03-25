@@ -1,6 +1,16 @@
 {
   "name": "flexi-button",
-  "version": "19.0.21",
+  "version": "19.0.27",
+  "description": "A highly customizable button component for Angular",
+  "author": "Taner Saydam <tanersaydam@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "button",
+    "loading",
+    "resize",
+    "icon"
+  ],
   "peerDependencies": {
     "@angular/common": "^19.0.0",
     "@angular/core": "^19.0.0"
@@ -16,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/FlexiUI-labs/flexi-button/issues"
   },
-  "homepage": "https://github.com/FlexiUI-labs/flexi-button"
+  "homepage": "https://stackblitz.com/edit/stackblitz-starters-a2wn9try?file=src%2Fmain.ts"
 }
