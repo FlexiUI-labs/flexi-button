@@ -3,7 +3,7 @@ A highly customizable button component for Angular
 
 ## Live Demo
 
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://bolt.new/~/stackblitz-starters-k8agwdjl)
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://stackblitz.com/edit/stackblitz-starters-a2wn9try)
 
 ## Features
 - Supports text, icon, or both
