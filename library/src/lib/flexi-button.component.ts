@@ -1,12 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { ChangeDetectionStrategy, Component, input, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'flexi-button:not(p)',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: "./flexi-button.component.html",
     styleUrl: './flexi-button.component.css',
-    host: { '[attr.data-instance-id]': 'instanceId' },
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
