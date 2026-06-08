@@ -1,6 +1,6 @@
 {
   "name": "flexi-button",
-  "version": "21.0.0",
+  "version": "22.0.0",
   "description": "A highly customizable button component for Angular",
   "author": "Taner Saydam <tanersaydam@gmail.com>",
   "license": "MIT",
@@ -12,8 +12,8 @@
     "icon"
   ],
   "peerDependencies": {
-    "@angular/common": "^21.0.0",
-    "@angular/core": "^21.0.0"
+    "@angular/common": "^22.0.0",
+    "@angular/core": "^22.0.0"
   },
   "dependencies": {
     "tslib": "^2.8.1"
